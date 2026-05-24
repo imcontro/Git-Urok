@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git Practice Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-labelledby="main-title">
+      <div class="hero__copy">
+        <p class="eyebrow">Учебный проект</p>
+        <h1 id="main-title">Git Practice Board</h1>
+        <p class="lead">
+          Простая страница для тренировки веток, коммитов и маленьких задач.
+        </p>
+        <div class="actions">
+          <button class="button button--primary" id="completeTask">Закрыть задачу</button>
+          <button class="button button--ghost" id="changeBranch">Сменить ветку</button>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Пример терминала">
+        <div class="terminal__bar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <pre><code id="terminalText">git status
+On branch master
+nothing to commit, working tree clean</code></pre>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Статистика проекта">
+      <article>
+        <strong id="doneCount">3</strong>
+        <span>задачи готово</span>
+      </article>
+      <article>
+        <strong id="branchName">master</strong>
+        <span>текущая ветка</span>
+      </article>
+      <article>
+        <strong>7</strong>
+        <span>дней практики</span>
+      </article>
+    </section>
+
+    <section class="cards" aria-label="План обучения">
+      <article class="card">
+        <span class="card__number">01</span>
+        <h2>Пиши маленькие коммиты</h2>
+        <p>Так проще понять историю проекта и быстро найти нужное изменение.</p>
+      </article>
+      <article class="card">
+        <span class="card__number">02</span>
+        <h2>Работай в ветках</h2>
+        <p>Новые идеи можно проверять отдельно, не ломая стабильную версию.</p>
+      </article>
+      <article class="card">
+        <span class="card__number">03</span>
+        <h2>Проверяй статус</h2>
+        <p><code>git status</code> показывает, что изменилось и что готово к коммиту.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
